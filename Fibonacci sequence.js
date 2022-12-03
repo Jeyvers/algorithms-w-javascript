@@ -5,6 +5,11 @@
 // fibonacci(7) = [0,1, 1, 2, 3, 5, 8, ]
 // remember: the next value is a sum of two preceding values
 
+// Big O time-complexity for my first solution was O(n) +3 (which was wrong because two more letters were added)
+// Big O time-complexity for my second solution was O(n^2) + 3 (correct but large time-complexity because of the splice function which also has a linear complexity, same as the loop,  dependent on the input size)
+// Big-O time-complexity for my final solution was O(n) + 3 (the output was correct)
+// Big O time-complexity for the tutor's solution was O(n) + 2
+
 // MY SOLUTION
 const fibonacci = (n) => {
   let fib = [0, 1];
