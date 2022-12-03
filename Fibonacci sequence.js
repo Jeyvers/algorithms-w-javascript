@@ -7,16 +7,31 @@
 
 // MY SOLUTION
 const fibonacci = (n) => {
-  let constants = [0, 1];
+  let fib = [0, 1];
   let sum = 0;
-  for (let i = 0; i < n; i++) {
-    sum = constants[constants.length - 2] + constants[constants.length - 1];
-    constants.push(sum);
+  for (let i = 2; i < n; i++) {
+    sum = fib[fib.length - 2] + fib[fib.length - 1];
+    fib.push(sum);
   }
-  return constants.slice(0, n);
+  return fib;
 };
 
 console.log(fibonacci(2));
 console.log(fibonacci(3));
 console.log(fibonacci(7));
 console.log(fibonacci(12));
+
+// TUTOR'S SOLUTION
+
+function fibonacci2(n) {
+  const fib = [0, 1];
+  for (let i = 2; i < n; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+  }
+  return fib;
+}
+
+console.log(fibonacci2(2));
+console.log(fibonacci2(3));
+console.log(fibonacci2(7));
+console.log(fibonacci2(12));
