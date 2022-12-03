@@ -1,0 +1,14 @@
+MATH ALGORITHMS (PROBLEM SOLVING)
+- Fibonacci sequence
+- Factorial of a number
+- Prime number
+- Power of two
+- Recursion
+- Fibonacci sequence with recursion
+- Factorial of a number with recursion
+
+Approach
+- The problem statement
+- Pause the video and try solving the problem 
+- Implement the solution together
+- Determine the Big-O of the solution

@@ -10,7 +10,7 @@
     }
     return sum; // code 3 executes once
   }
-  // therefore, the time complexity will be n(4) + 2
+  // therefore, the time complexity will be n(4) + 2 if n = 4
 }
 
 // Second  Algorithm O(1) - constant
