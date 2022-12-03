@@ -10,15 +10,13 @@ const fibonacci = (n) => {
   let constants = [0, 1];
   let sum = 0;
   for (let i = 0; i < n; i++) {
-    console.log(
-      constants[constants.length - 2],
-      constants[constants.length - 1]
-    );
     sum = constants[constants.length - 2] + constants[constants.length - 1];
-    console.log(sum);
     constants.push(sum);
-    console.log(constants);
   }
-  return sum;
+  return constants.slice(0, n);
 };
-fibonacci(7);
+
+console.log(fibonacci(2));
+console.log(fibonacci(3));
+console.log(fibonacci(7));
+console.log(fibonacci(12));
