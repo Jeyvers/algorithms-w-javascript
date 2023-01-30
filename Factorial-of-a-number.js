@@ -10,7 +10,7 @@ const factorial = (n) => {
   }
   return sum;
 };
-
+//n+2 The Big O for my function is O(n) - linear
 console.log(factorial(4));
 console.log(factorial(5));
 console.log(factorial(0));
@@ -24,6 +24,7 @@ function factorialT(n) {
   }
   return result;
 }
+// The Big O = O(n)
 
 console.log(factorialT(4));
 console.log(factorialT(5));
