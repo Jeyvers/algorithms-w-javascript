@@ -13,3 +13,19 @@ const factorial = (n) => {
 
 console.log(factorial(4));
 console.log(factorial(5));
+console.log(factorial(0));
+console.log(factorial(1));
+
+// TUTOR'S SOLUTION
+function factorialT(n) {
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result = result * i;
+  }
+  return result;
+}
+
+console.log(factorialT(4));
+console.log(factorialT(5));
+console.log(factorialT(0));
+console.log(factorialT(1));
