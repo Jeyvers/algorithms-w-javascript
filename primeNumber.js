@@ -15,20 +15,7 @@ function isPrime(n) {
   return prime;
 }
 
-// 2, 3, 5, 7, 11
-// 1,4,6,8,9,10
-console.log(isPrime(1));
-console.log(isPrime(2));
-console.log(isPrime(3));
-console.log(isPrime(4));
-console.log(isPrime(5));
-console.log(isPrime(6));
-console.log(isPrime(7));
-console.log(isPrime(8));
-console.log(isPrime(9));
-console.log(isPrime(10));
-
-// TUTOR'S SOLUTION
+// TUTOR'S SOLUTION 1
 function isPrimeT(n) {
   if (n < 2) {
     return false;
@@ -40,6 +27,21 @@ function isPrimeT(n) {
   }
   return true;
 }
+// Big O = O(n)
+
+// TUTOR'S SOLUTION 2
+function isPrimeT(n) {
+  if (n < 2) {
+    return false;
+  }
+  for (let i = 2; i < Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+// Big O = O(sqrt(n))
 
 console.log(isPrime(1)); // false
 console.log(isPrime(5)); // true
