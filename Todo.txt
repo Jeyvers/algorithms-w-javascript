@@ -1,3 +1,0 @@
-Reading List
- 
- Briefly go through: https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/
