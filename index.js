@@ -1,32 +1,23 @@
-// Problem: Given an integer 'n', find the factorial of that integer
-// In mathematics, the factorial of a non-negative integer 'n', denoted n!, is the product of all positive integers less than or equal to 'n'. Eg: factorial(4) = 4*3*2*1
-// Factorial of zero is one.
+// Problem - Given a positive integer `n`, determine if the number is a power of 2 or not.
+// An integer is a power of two if there exists an integer `x` such that `n` === 2x.
 
 // MY SOLUTION
-const factorial = (n) => {
-  let sum = 1;
-  for (i = 1; i <= n; i++) {
-    sum = sum * i;
+function isPowerOfTwo(n){
+  if(n < 1) {
+    return false
   }
-  return sum;
-};
-//n+2 The Big O for my function is O(n) - linear
-console.log(factorial(4));
-console.log(factorial(5));
-console.log(factorial(0));
-console.log(factorial(1));
-
-// TUTOR'S SOLUTION
-function factorialT(n) {
-  let result = 1;
-  for (let i = 2; i <= n; i++) {
-    result = result * i;
+  for(let i = 0; i <= n; i++) {
+    if(Math.pow(2, i) === n) {
+      return ({is: true, syntax: `2^${i}`})
+    }
   }
-  return result;
+return false 
 }
-// The Big O = O(n)
 
-console.log(factorialT(4));
-console.log(factorialT(5));
-console.log(factorialT(0));
-console.log(factorialT(1));
+// isPowerOfTwo(1) true (2^0) 
+// isPowerOfTwo(2) true (2^1) 
+// isPowerOfTwo(5) false
+
+console.log(isPowerOfTwo(1))
+console.log(isPowerOfTwo(2))
+console.log(isPowerOfTwo(5))
