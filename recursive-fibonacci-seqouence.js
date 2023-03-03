@@ -8,5 +8,3 @@ function recursiveFibonacci(n) {
 console.log(recursiveFibonacci(0)) //0
 console.log(recursiveFibonacci(1)) //1
 console.log(recursiveFibonacci(6)) //8
-
-// BIG O = O(2^n) - Recursive
