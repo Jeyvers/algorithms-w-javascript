@@ -21,10 +21,10 @@ const fibonacci = (n) => {
   return fib;
 };
 
-console.log(fibonacci(2));
-console.log(fibonacci(3));
-console.log(fibonacci(7));
-console.log(fibonacci(12));
+// console.log(fibonacci(2));
+// console.log(fibonacci(3));
+// console.log(fibonacci(7));
+// console.log(fibonacci(12));
 
 // TUTOR'S SOLUTION
 
@@ -36,7 +36,6 @@ function fibonacci2(n) {
   return fib;
 }
 
-console.log(fibonacci2(2));
-console.log(fibonacci2(3));
-console.log(fibonacci2(7));
-console.log(fibonacci2(12));
+console.log(fibonacci2(0));
+console.log(fibonacci2(1));
+console.log(fibonacci2(6));

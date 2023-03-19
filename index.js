@@ -1,12 +1,9 @@
-function recursiveFibonacci(n) {
-  if (n < 2) {
+function recursiveFactorial(n) {
+  if(n<2) {
     return n
   }
-  return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2)
+return n * recursiveFactorial(n-1)
 }
 
-console.log(recursiveFibonacci(0)) //0
-console.log(recursiveFibonacci(1)) //1
-console.log(recursiveFibonacci(6)) //8
-
-// BIG O = O(2^n) - Recursive
+console.log(recursiveFactorial(6))
+// recursiveFactorial(4)
