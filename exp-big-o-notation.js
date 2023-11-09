@@ -1,4 +1,4 @@
-// Big-O Time Complexity
+ // Big-O Time Complexity
 
 // Problem: find the sum of first n natural numbers
 {
