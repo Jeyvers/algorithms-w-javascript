@@ -1,5 +1,5 @@
 // PROBLEM STATEMENT
-// Given a SORTED array of 'n' elements and a target element 'target', find the index of 't' in the array. Return -1 if the target element is not found.
+// Given a SORTED array of 'n' elements and a target element 't', find the index of 't' in the array. Return -1 if the target element is not found.
 // e.g arr = [-5, 2, 10, 4, 6], t = 10 --- should return 4
 // Find middle element in the sorted array
 
