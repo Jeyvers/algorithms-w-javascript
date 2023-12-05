@@ -1,33 +1,18 @@
-// PROBLEM - Given an array of integers, sort the array
-const arr = [-6, 20, 8, -2, 4];
 
-// Idea behind quick sort:
-// - Identify the pivot element in the array: Pick the first, last (our approach), median, or random element as pivot
-// - Put everything that's smaller than the pivot to the left and greater to the right
-// Repeat the process for the individual left and right 
-// Repeatedly concatenate the left array, pivot and right array till one sorted array remains
+let a="aaaaavvvvbbbbssssqzx";
+let duplicatedElements = [];
+let numberofDuplicates = [];
+for (let i = 0; i < a.length; i++) {
+  
+  let arrayOfStrings = a.split('');
+  const duplicates = arrayOfStrings.filter((dup) => dup === a[i]);
+  const isExisting = duplicatedElements.findIndex((d) => d === a[i])
 
-function quickSort(arr) {
-  if(arr.length < 2) {
-    return arr
+  if(duplicates.length > 1 && isExisting === -1 ) {
+    duplicatedElements.push(a[i]);
+    numberofDuplicates.push(duplicates.length)
   }
-  let pivot = arr[arr.length -1];
-  let left = []
-  let right = []
-
-  for(let i = 0; i < arr.length -1; i++) {
-    if(arr[i]<pivot) {
-      left.push(arr[i])
-    } else {
-      right.push (arr[i])
-    }
-  }
-  return [...quickSort(left), pivot,...quickSort(right)]
   
 }
 
-console.log(quickSort(arr))
-
-// Big O
-// Work case = O(n^2) 
-// Avg Case - O(nlogn)
+console.log(duplicatedElements, numberofDuplicates)
