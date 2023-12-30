@@ -6,9 +6,13 @@ MATH ALGORITHMS (PROBLEM SOLVING)
 - Recursion
 - Fibonacci sequence with recursion
 - Factorial of a number with recursion
+// Done but rewatch
 
 Approach
 - The problem statement
 - Pause the video and try solving the problem 
 - Implement the solution together
 - Determine the Big-O of the solution
+
+Reading List
+ Briefly go through: https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/
